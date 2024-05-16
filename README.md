@@ -1,14 +1,14 @@
 # autovec-tests
-All code is by [WojciechMula](https://github.com/WojciechMula), see [https://github.com/WojciechMula/toys/tree/master/autovectorization-tests], I just ran it for clang-18 and gcc-14
+All code is by [WojciechMula](https://github.com/WojciechMula), original code: [https://github.com/WojciechMula/toys/tree/master/autovectorization-tests], I just ran it for clang-18 and gcc-14
 
 Autovectorization tests on clang-18 and gcc-14.1 
 
 #### Steps to reproduce:
 
 1. Compile code to assembly:
-	a. do this for each compiler=['gcc', 'clang'] and target=['avx2', 'avx512']
-	b. python3 scripts/compile_all.py <compiler> <target> > run-tests_<compiler>_<target>.sh
-	c. sh run-tests_<compiler>_<target>.sh
+	1. do this for each compiler=['gcc', 'clang'] and target=['avx2', 'avx512']
+	2. python3 scripts/compile_all.py <compiler> <target> > run-tests_<compiler>_<target>.sh
+	3. sh run-tests_<compiler>_<target>.sh
 2. Add the <compiler>_<target>.txt in results folder, with the results
 
 3. Run `python3 scripts/comparison.py` to see the comparision table.
@@ -89,5 +89,7 @@ Generated from `scripts/comparison.py` script.
 
 
 [1] SIMD instructions present, but not in the main loop
+
 [2] calls ``memset``
+
 [3] loads input's chunk into a vector register, but all comparisons and stores are scalar
