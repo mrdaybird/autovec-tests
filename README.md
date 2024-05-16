@@ -4,15 +4,17 @@ All code is by [WojciechMula](https://github.com/WojciechMula), original code: [
 Autovectorization tests on clang-18 and gcc-14.1 
 
 #### Steps to reproduce:
+NOTE: Output files, including the assembly and results file, are already in the repo.
 
 1. Compile code to assembly:
 	1. do this for each compiler=['gcc', 'clang'] and target=['avx2', 'avx512']
 	2. `python3 scripts/compile_all.py <compiler> <target> > run-tests_<compiler>_<target>.sh`
 	3. `sh run-tests_<compiler>_<target>.sh`
+	4. `mv *.s results/<compiler><version>_<target>`
 2. Add the `<compiler>_<target>.txt` in results folder, with the results
 	1. For me, this involved, 
-		1. search for xmm/ymm registers with grep, 
-		2. git diff the old assembly with the new one
+		1. searching for xmm/ymm registers with grep, 
+		2. git diffing the old assembly with the new one
 			(btw use git diff --no-index if inside a repo to compare directory/files)
 
 3. Run `python3 scripts/comparison.py` to see the comparision table.
