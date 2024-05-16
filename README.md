@@ -10,6 +10,10 @@ Autovectorization tests on clang-18 and gcc-14.1
 	2. `python3 scripts/compile_all.py <compiler> <target> > run-tests_<compiler>_<target>.sh`
 	3. `sh run-tests_<compiler>_<target>.sh`
 2. Add the `<compiler>_<target>.txt` in results folder, with the results
+	1. For me, this involved, 
+		1. search for xmm/ymm registers with grep, 
+		2. git diff the old assembly with the new one
+			(btw use git diff --no-index if inside a repo to compare directory/files)
 
 3. Run `python3 scripts/comparison.py` to see the comparision table.
 
