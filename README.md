@@ -7,8 +7,8 @@ Autovectorization tests on clang-18 and gcc-14.1
 
 1. Compile code to assembly:
 	1. do this for each compiler=['gcc', 'clang'] and target=['avx2', 'avx512']
-	2. python3 scripts/compile_all.py <compiler> <target> > run-tests_<compiler>_<target>.sh
-	3. sh run-tests_<compiler>_<target>.sh
+	2. `python3 scripts/compile_all.py <compiler> <target> > run-tests_<compiler>_<target>.sh`
+	3. `sh run-tests_<compiler>_<target>.sh`
 2. Add the <compiler>_<target>.txt in results folder, with the results
 
 3. Run `python3 scripts/comparison.py` to see the comparision table.
