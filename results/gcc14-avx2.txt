@@ -1,5 +1,5 @@
 compiler: GCC: (GNU) 14.1.0
-cmdline: -O3 -mavx2
+cmdline: -fopt-info-vec-all -O3 -mavx2
 
 accumulate_custom_epi32: yes
 accumulate_custom_epi8: no

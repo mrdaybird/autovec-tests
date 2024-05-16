@@ -7,15 +7,11 @@ Autovectorization tests on clang-18 and gcc-14.1
 NOTE: Output files, including the assembly and results file, are already in the repo.
 
 1. Compile code to assembly:
-	1. do this for each compiler=['gcc', 'clang'] and target=['avx2', 'avx512']
+	1. do this for each compiler=['gcc -fopt-info-vec-all', 'clang -Rpass=loop-vectorize -Rpass-missed=loop-vectorize'] and target=['avx2', 'avx512'],
 	2. `python3 scripts/compile_all.py <compiler> <target> > run-tests_<compiler>_<target>.sh`
-	3. `sh run-tests_<compiler>_<target>.sh`
+	3. `sh run-tests_<compiler>_<target>.sh 2> report_<compiler>_<target>.txt`(this will compile and generate report about vectorization)
 	4. `mv *.s results/<compiler><version>_<target>`
-2. Add the `<compiler>_<target>.txt` in results folder, with the results
-	1. For me, this involved, 
-		1. searching for xmm/ymm registers with grep, 
-		2. git diffing the old assembly with the new one
-			(btw use git diff --no-index if inside a repo to compare directory/files)
+2. Add the `<compiler>_<target>.txt` in results folder, with the results from report generated.
 
 3. Run `python3 scripts/comparison.py` to see the comparision table.
 

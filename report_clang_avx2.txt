@@ -1,0 +1,176 @@
+In file included from accumulate_default.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/numeric:62:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_numeric.h:140:7: remark: vectorized loop (vectorization width: 8, interleaved count: 4) [-Rpass=loop-vectorize]
+  140 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_numeric.h:140:7: remark: vectorized loop (vectorization width: 8, interleaved count: 4) [-Rpass=loop-vectorize]
+In file included from accumulate_custom.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/numeric:62:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_numeric.h:168:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+  168 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_numeric.h:168:7: remark: vectorized loop (vectorization width: 8, interleaved count: 4) [-Rpass=loop-vectorize]
+In file included from all_of.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from any_of.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from copy.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:401:4: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+  401 |           for(_Distance __n = __last - __first; __n > 0; --__n)
+      |           ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:401:4: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from copy_if.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:657:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+  657 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:657:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from count.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2152:7: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+ 2152 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2152:7: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+In file included from count_if.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2152:7: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+ 2152 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2152:7: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+In file included from fill.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:951:7: remark: vectorized loop (vectorization width: 8, interleaved count: 4) [-Rpass=loop-vectorize]
+  951 |       for (; __first != __last; ++__first)
+      |       ^
+In file included from find.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from find_if.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from is_sorted.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:3220:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 3220 |       for (++__next; __next != __last; __first = __next, (void)++__next)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:3220:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from none_of.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+remove.cpp:7:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+    7 |     std::remove(v.begin(), v.end(), 42);
+      |     ^~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+remove.cpp:11:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+   11 |     std::remove(v.begin(), v.end(), 42);
+      |     ^~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~
+In file included from remove.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2169:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2169 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2169:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2169 |       for (; __first != __last; ++__first)
+      |       ^
+2 warnings generated.
+remove_if.cpp:7:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+    7 |     std::remove_if(v.begin(), v.end(), [](int8_t c){return c != 42;});
+      |     ^~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+remove_if.cpp:11:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+   11 |     std::remove_if(v.begin(), v.end(), [](int8_t c){return c != 42;});
+      |     ^~~~~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from remove_if.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:60:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2169:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2169 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2095:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2095 |       for (; __trip_count > 0; --__trip_count)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algobase.h:2169:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 2169 |       for (; __first != __last; ++__first)
+      |       ^
+2 warnings generated.
+In file included from replace.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4291:7: remark: vectorized loop (vectorization width: 32, interleaved count: 1) [-Rpass=loop-vectorize]
+ 4291 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4291:7: remark: vectorized loop (vectorization width: 8, interleaved count: 4) [-Rpass=loop-vectorize]
+In file included from replace_if.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4324:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 4324 |       for (; __first != __last; ++__first)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4324:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from reverse.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:1060:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+ 1060 |       while (__first < __last)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:1060:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+In file included from transform_abs.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4218:7: remark: vectorized loop (vectorization width: 32, interleaved count: 4) [-Rpass=loop-vectorize]
+ 4218 |       for (; __first != __last; ++__first, (void)++__result)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4218:7: remark: vectorized loop (vectorization width: 8, interleaved count: 4) [-Rpass=loop-vectorize]
+In file included from transform_inc.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4218:7: remark: vectorized loop (vectorization width: 32, interleaved count: 4) [-Rpass=loop-vectorize]
+ 4218 |       for (; __first != __last; ++__first, (void)++__result)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4218:7: remark: vectorized loop (vectorization width: 8, interleaved count: 4) [-Rpass=loop-vectorize]
+In file included from transform_neg.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4218:7: remark: vectorized loop (vectorization width: 32, interleaved count: 4) [-Rpass=loop-vectorize]
+ 4218 |       for (; __first != __last; ++__first, (void)++__result)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:4218:7: remark: vectorized loop (vectorization width: 8, interleaved count: 4) [-Rpass=loop-vectorize]
+unique.cpp:6:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+    6 |     std::unique(v.begin(), v.end());
+      |     ^~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~
+unique.cpp:10:5: warning: ignoring return value of function declared with 'nodiscard' attribute [-Wunused-result]
+   10 |     std::unique(v.begin(), v.end());
+      |     ^~~~~~~~~~~ ~~~~~~~~~~~~~~~~~~
+In file included from unique.cpp:1:
+In file included from /usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/algorithm:61:
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:845:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+  845 |       while (++__next != __last)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:868:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+  868 |       while (++__first != __last)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:845:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+  845 |       while (++__next != __last)
+      |       ^
+/usr/local/bin/../lib/gcc/x86_64-pc-linux-gnu/14.1.0/../../../../include/c++/14.1.0/bits/stl_algo.h:868:7: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+  868 |       while (++__first != __last)
+      |       ^
+2 warnings generated.

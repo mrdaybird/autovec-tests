@@ -1,5 +1,5 @@
 compiler: clang version 18.0.0 (https://github.com/llvm/llvm-project.git 2176c5e510e3bfcbc75afb13e78d287141f239a7)
-cmdline: -O3 -mavx2
+cmdline: -Rpass=loop-vectorize -Rpass-missed=loop-vectorize -O3 -mavx2
 
 accumulate_custom_epi32: yes
 accumulate_custom_epi8: no
