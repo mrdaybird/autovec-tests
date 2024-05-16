@@ -11,8 +11,8 @@ any_of_epi32: no
 any_of_epi8: no
 copy_epi32: no [SIMD instructions present, but not in the main loop]
 copy_epi8: no [SIMD instructions present, but not in the main loop]
-copy_if_epi32: no [SIMD instructions present, but not in the main loop]
-copy_if_epi8: no [SIMD instructions present, but not in the main loop]
+copy_if_epi32: no [SIMD instructions present, but not in the main loop, calls ``memcpy``]
+copy_if_epi8: no [SIMD instructions present, but not in the main loop, calls ``memcpy``]
 count_epi32: yes
 count_epi8: yes
 count_if_epi32: yes 

@@ -9,10 +9,10 @@ all_of_epi32: no
 all_of_epi8: no
 any_of_epi32: no
 any_of_epi8: no
-copy_epi32: no
-copy_epi8: no
-copy_if_epi32: no
-copy_if_epi8: no
+copy_epi32: no [calls ``memcpy``]
+copy_epi8: no [calls ``memcpy``]
+copy_if_epi32: no [calls ``memcpy``]
+copy_if_epi8: no [calls ``memcpy``]
 count_epi32: yes
 count_epi8: yes
 count_if_epi32: yes
